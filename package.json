@@ -1,0 +1,20 @@
+{
+  "name": "cypress_boiler_plate",
+  "version": "1.0.0",
+  "description": "sample cypress project",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cleanup": "del mochawesome-reports"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.2.0"
+  },
+  "dependencies": {
+    "comment-json": "^4.0.6",
+    "json-comments": "^0.2.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "viewportWidth": 1400,
+    "viewportHeight": 700,
+    "defaultCommandTimeout": 20000,
+      "retries": {
+        "runMode": 1,
+        "openMode": 0
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "mochawesome-reports",
+      "reportFilename": "Reports for Cypress boiler plates",
+      "overwrite": false,
+      "timestamp": "mmddyyyy_HHMMss",
+      "charts": true,
+      "code": false
+    }
+  }
