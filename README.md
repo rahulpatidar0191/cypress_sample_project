@@ -1,0 +1,1 @@
+A sample boiler plate project for automation using Cypress
