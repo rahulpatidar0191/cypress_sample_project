@@ -11,7 +11,7 @@ class elements {
 
         this.checkBoxesExample = "input[type='checkbox']"
        // this.browse  = ":nth-child(1) > .site-nav__link > .site-nav__label"
-        this.businessName = ".businesses__container"
+        this.newWindowExample = " button[id='openwindow']"
       
 
       
