@@ -1,4 +1,6 @@
 {
 
-  "countryName" : "Cana"
+  "countryName" : "Cana",
+  "alert_text" :  "Hello , share this practice page and share your knowledge",
+  "confirm_alert" : "Hello , Are you sure you want to confirm?"
 }

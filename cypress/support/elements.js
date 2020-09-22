@@ -10,8 +10,16 @@ class elements {
 
 
         this.checkBoxesExample = "input[type='checkbox']"
-       // this.browse  = ":nth-child(1) > .site-nav__link > .site-nav__label"
-        this.businessName = ".businesses__container"
+     
+        this.newWindowExample = " button[id='openwindow']"
+        this.newTabExample = "#opentab"
+        this.alertExample = "#alertbtn"
+        this.alertExample2 = "#confirmbtn"
+
+        this.hideButton = "#hide-textbox"
+        this.displayedText = "#displayed-text"
+        this.showButton = "#show-textbox"
+
       
 
       

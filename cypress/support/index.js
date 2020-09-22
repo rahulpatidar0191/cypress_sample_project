@@ -18,3 +18,14 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+// if you want to debug when any test fails
+// You likely want to put this in a support file,
+// or at the top of an individual spec file
+Cypress.on('fail', (error, runnable) => {
+    debugger
+  
+    // we now have access to the err instance
+    // and the mocha runnable this failed on
+  
+    throw error // throw error to have test still fail
+  })
