@@ -31,30 +31,43 @@ describe("Sample project ", () => {
 
   xit("A new tab example", () => {
     var goTo = new Elements();
-    cy.get("#opentab").invoke("removeAttr", "target").click();
+    cy.get(goTo.newTabExample).invoke("removeAttr", "target").click();
     cy.url().should("include", "/index");
   });
-  it("Switch to alerts example", () => {
+
+  xit("Switch to alerts example", () => {
     var goTo = new Elements();
     //simple alert
     const stub = cy.stub();
     cy.on("window:alert", stub);
 
-    cy.get("#alertbtn")
+    cy.get(goTo.alertExample)
       .click()
       .then(() => {
         expect(stub.getCall(0)).to.be.calledWith(data.alert_text);
       });
   });
 
-  it("Switch to alerts example -2 ", () => {
+  xit("Switch to alerts example -2 ", () => {
     var goTo = new Elements();
     //Confirm alert
-    cy.get("#confirmbtn").click();
+    cy.get(goTo.alertExample2).click();
 
     cy.on("window:alert", (str) => {
       expect(str).to.equal(confirm_alert);
     });
+  });
+
+  it("Content disappering assertion example ", () => {
+    var goTo = new Elements();
+
+    cy.get(goTo.displayedText).should("be.visible");
+    cy.get(goTo.hideButton).click();
+
+    cy.get(goTo.displayedText).should("not.be.visible");
+    cy.get(goTo.showButton).click();
+
+    cy.get(goTo.displayedText).should("be.visible");
   });
 });
 
