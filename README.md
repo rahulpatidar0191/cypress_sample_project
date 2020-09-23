@@ -1,5 +1,3 @@
-A sample boiler plate project for automation using Cypress
-
 # Cypress_Sample_Project
 A sample boiler plate project for automation using Cypress
 
@@ -30,7 +28,7 @@ yarn cy:open
 to open the Cypress test runner
 
 
-mochawesome-reports have the report and screenshots/vidoes of the test cases failed/pass
+- mochawesome-reports have the report and screenshots/vidoes of the test cases failed/pass
 
 
 
