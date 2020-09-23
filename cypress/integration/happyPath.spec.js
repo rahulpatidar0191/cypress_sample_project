@@ -3,9 +3,8 @@ var Elements = require("../support/elements");
 var data = require("../support/data");
 
 describe("Sample project ", () => {
-  xit("Radio buttons example", () => {
+  it("Radio buttons example", () => {
     var goTo = new Elements();
-
     cy.get(goTo.radio).eq(0).click(); //clicking on the first radio element out of 3
 
     //to click on all the radio buttons one by one
@@ -16,26 +15,25 @@ describe("Sample project ", () => {
     //addd an assertion here to make sure the desired option is selected
   });
 
-  xit("Dropdown Example", () => {
+  it("Dropdown Example", () => {
     var goTo = new Elements();
     cy.get(goTo.dropDownExample)
       .select("option2")
       .should("have.value", "option2");
   });
 
-  xit("Checkbox example", () => {
+  it("Checkbox example", () => {
     var goTo = new Elements();
-
     cy.get(goTo.checkBoxesExample).first().check().should("be.checked"); //Check first option and make sure its selected
   });
 
-  xit("A new tab example", () => {
+  it("A new tab example", () => {
     var goTo = new Elements();
     cy.get(goTo.newTabExample).invoke("removeAttr", "target").click();
     cy.url().should("include", "/index");
   });
 
-  xit("Switch to alerts example", () => {
+  it("Switch to alerts example", () => {
     var goTo = new Elements();
     //simple alert
     const stub = cy.stub();
@@ -48,7 +46,7 @@ describe("Sample project ", () => {
       });
   });
 
-  xit("Switch to alerts example -2 ", () => {
+  it("Switch to alerts example-2 ", () => {
     var goTo = new Elements();
     //Confirm alert
     cy.get(goTo.alertExample2).click();
