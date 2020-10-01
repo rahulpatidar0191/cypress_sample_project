@@ -69,6 +69,22 @@ describe("Sample project ", () => {
 
     cy.get(goTo.displayedText).should("be.visible");
   });
+
+  it("iFrame example", () => {
+    var goTo = new Elements();
+    cy.frameLoaded();
+    cy.iframe()
+      .find("iframeElement")
+      .click()
+      .then(() => {
+        //Perform the iframe operation here
+      });
+    // You can also give it a selector to find elements inside of a specific iframe
+    cy.enter("#my-iframe").then((getBody) => {
+      getBody().find(".some-button").should("be.visible").click();
+      getBody().contains("Some hidden element").should("not.be.visible");
+    });
+  });
 });
 
 before(() => {
