@@ -29,7 +29,7 @@ describe("Sample project ", () => {
 
   it("A new tab example", () => {
     var goTo = new Elements();
-    cy.get(goTo.newTabExample).invoke("removeAttr", "target").click();
+    cy.get(goTo.newTabExample).invoke("removeAttr", "target").click(); //remove the attribute so it doesnt open in a new tab 
     cy.url().should("include", "/index");
   });
 
