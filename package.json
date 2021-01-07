@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.2.0"
+    "cypress": "^6.1.0"
   },
   "dependencies": {
     "comment-json": "^4.0.6",
