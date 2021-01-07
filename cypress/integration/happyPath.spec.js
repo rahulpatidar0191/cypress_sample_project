@@ -6,9 +6,9 @@ describe("Sample project ", () => {
   it("Radio buttons example", () => {
     var goTo = new Elements();
 
-    cy.get('#username').type("jaiparu52@gmail.com")
+    cy.get('#username').type("")
 
-    cy.get('#password').type('23481761a')
+    cy.get('#password').type('')
 
     cy.get('.sign-in > .solid-button').click()
 
