@@ -11,14 +11,9 @@ describe("Sample project ", () => {
     cy.get('#password').type('')
 
     cy.get('.sign-in > .solid-button').click()
-
-    
-
-
-    //addd an assertion here to make sure the desired option is selected
+    //add assertions here to make sure the desired option is selected
   });
 
-/*
   
   it("Dropdown Example", () => {
     var goTo = new Elements();
@@ -92,5 +87,5 @@ describe("Sample project ", () => {
 });
 
 before(() => {
-  cy.visit("https://www.marketwatch.com/watchlist");
+  cy.visit(URL);
 });
